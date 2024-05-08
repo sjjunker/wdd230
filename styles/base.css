@@ -66,6 +66,11 @@ a {
     text-decoration: none;
 }
 
+a:hover::first-letter {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 a:visited,
 a:link {
     color: black;
@@ -85,13 +90,22 @@ h2 {
     border-bottom: 1px solid black;
 }
 
-.card {
-    min-width: 100%;
+.card,
+iframe {
     border: 1px solid black;
     margin: .5rem;
     border-radius: .5rem;
     justify-self: center;
+}
+
+.card {
+    min-width: 100%;
     grid-column: 1/2;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
 }
 
 h3 {
