@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan+SC&display=swap');
+
+* {
+    width: 600px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#font {
+    font-family: "Sedan SC", serif;
+}
+
+div {
+    margin: 1rem;
+    border-bottom: 1px solid #fff9d0;
+}
+
+#primary::selection {
+    background-color: #5ab2ff;
+}
+
+#secondary::selection {
+    background-color: #caf4ff;
+}
+
+#accent1::selection {
+    background-color: #f5dad2;
+}
+
+#accent2::selection {
+    background-color: #fff9d0;
+}
+
+header,
+footer {
+    background-color: #f5dad2;
+}
+
+main {
+    background-color: #caf4ff;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    margin: 1rem;
+}
