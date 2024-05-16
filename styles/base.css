@@ -26,7 +26,7 @@ h1 {
 }
 
 #menu {
-    position: absolute;
+    position: relative;
     left: 1rem;
     top: 14.75rem;
 }
