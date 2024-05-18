@@ -49,6 +49,7 @@ header {
 .navigation a {
     text-decoration: none;
     display: none;
+    color: black;
 }
 
 .open a {
