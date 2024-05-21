@@ -1,6 +1,7 @@
 const list = document.querySelector("#list");
 const addButton = document.querySelector("button");
 const input = document.querySelector("#favchap");
+let number = 1;
 
 addButton.addEventListener("click", () => {
 
@@ -9,7 +10,7 @@ addButton.addEventListener("click", () => {
         const listItem = document.createElement("li");
         const deleteButton = document.createElement("button");
 
-        listItem.innerHTML = input.value;
+        listItem.innerHTML = `${number}. ${input.value}`;
         deleteButton.textContent = "❌";
         listItem.append(deleteButton);
 
@@ -21,8 +22,11 @@ addButton.addEventListener("click", () => {
         });
 
         input.value = "";
+        number += 1;
 
     } else {
         input.focus();
     }
 });
+
+//Extra functionality added numbers to the list.
