@@ -29,6 +29,10 @@
             <a href="#">Directory</a>
             <a href="#">Join</a>
         </nav>
+        <label class="switch">
+            <input type="checkbox" id="mode">
+            <span class="slider round"></span>
+        </label>
     </header>
 
     <main>
@@ -89,13 +93,21 @@
 
         <section id="weather">
             <h2>Weather</h2>
+            <img src="#" alt="Picture of the current weather">
+            <p>Temperature</p>
+            <p>Skies</p>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Wind Chill: <span id="wind-chill"></span></p>
         </section>
 
         <section id="contact">
             <h2>Get In Touch</h2>
-            <p></p>
-            <input id="email" name="email">
-            <input id="full-name" name="full-name">
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name">
+            </form>
         </section>
     </main>
 
@@ -109,6 +121,7 @@
 
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/nightmode.js"></script>
 </body>
 
 </html>
