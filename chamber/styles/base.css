@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedan+SC&display=swap');
 
 body {
     font-family: "Open Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    position: relative;
 }
 
 h1,
@@ -14,10 +20,11 @@ h6 {
     font-family: "Sedan SC", serif;
 }
 
+/*Hamburger menu*/
 #menu {
     position: absolute;
-    left: 1rem;
     top: .25rem;
+    left: 1rem;
 }
 
 #menu::before {
@@ -34,63 +41,14 @@ h6 {
     text-align: center;
 }
 
+
+/*Dark Mode Slider*/
 .switch {
-    position: relative;
-    display: inline-block;
+    position: absolute;
     width: 60px;
     height: 34px;
-    margin-left: 2rem;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: #2196F3;
-}
-
-input:focus+.slider {
-    box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+    top: .25rem;
+    right: 1rem;
 }
 
 .switch input {
@@ -156,13 +114,8 @@ input:checked+.slider:before {
 main {
     display: grid;
     width: 100%;
+    position: relative;
     grid-template-columns: 1fr;
-}
-
-header {
-    display: flex;
-    padding: 1rem;
-    justify-content: center;
 }
 
 .navigation a {
@@ -186,12 +139,12 @@ header {
 #weather,
 #contact,
 #call-to-action {
-    background-color: #f5dad2;
+    background-color: #f5dad280;
 }
 
 #spotlights,
 #current-events {
-    background-color: #caf4ff;
+    background-color: #caf4ff86;
 }
 
 #weather {
