@@ -2,7 +2,6 @@
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Sedan", serif;
 }
@@ -15,7 +14,11 @@ header {
     background-color: rgb(82, 111, 166);
 }
 
-img {
+body {
+    position: relative;
+}
+
+header img {
     margin: 1rem;
     border: 1px solid black;
     border-radius: .5rem;
@@ -26,9 +29,9 @@ h1 {
 }
 
 #menu {
-    position: relative;
+    position: absolute;
     left: 1rem;
-    top: 14.75rem;
+    top: 14.5rem;
 }
 
 #menu::before {
@@ -75,33 +78,41 @@ a:link {
 }
 
 main {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
     background-color: white;
-    grid-template-columns: 1fr;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.hero h2 {
+    position: absolute;
+    text-wrap: nowrap;
+    color: white;
+    border: none;
 }
 
 h2 {
-    justify-self: center;
+    text-align: center;
     margin: .5rem;
     border-bottom: 1px solid black;
 }
 
 .card,
-iframe {
+.map {
     border: 1px solid black;
     margin: .5rem;
     border-radius: .5rem;
-    justify-self: center;
 }
 
 .card {
-    min-width: 100%;
-    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
 }
 
-iframe {
+.map {
     width: 100%;
     height: auto;
 }
@@ -109,9 +120,9 @@ iframe {
 h3 {
     background-color: rgb(82, 111, 166);
     border-radius: .5rem .5rem 0 0;
-    grid-column: 1/2;
     color: white;
     padding: .5rem;
+    width: 100%;
 }
 
 li {
@@ -120,7 +131,7 @@ li {
 }
 
 .card p {
-    align-self: center;
+    align-items: center;
 }
 
 p {

@@ -5,7 +5,6 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/custom-normalization.css">
     <link rel="styleshhet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -25,7 +24,7 @@
 <body>
     <header>
         <h1>Sandi Junker</h1>
-        <img src="images/profile-picture.jpg" width="145" height="193" alt="Profile Picture of Sandi Junker">
+        <img src="images/profile-picture.webp" width="145" height="193" alt="Profile Picture of Sandi Junker">
     </header>
 
     <button id="menu" title="menu"></button>
@@ -39,36 +38,54 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <h2>Orlando, FL</h2>
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/orlando-temple-small.webp">
+                <source media="(max-width: 960px)" srcset="images/orlando-temple-medium.webp">
+
+                <img src="images/orlando-temple-large.webp" alt="Orlando, Florida LDS Temple" style="width:auto;">
+            </picture>
+        </div>
+
         <h2>WDD 230: Web Frontend Development</h2>
 
-        <section class="card" id="LA">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="lesson01/holygrail.html">Lesson 1</a></li>
-                <li><a href="lesson02/design.html">Lesson 2: Design</a></li>
-                <li><a href="lesson02/media-query.html">Lesson 2: Media Query</a></li>
-                <li><a href="lesson02/design-principles.html">Lesson 2: Design Principles</a></li>
-                <li><a href="lesson03/images/combinators-exercises.png">Lesson 3: Combinators Screenshot</a></li>
-                <li><a href="https://codepen.io/sjjunker/pen/oNOKMQY">Lesson 3: Psuedo-elements CodePen</a></li>
-                <li><a href="https://codepen.io/sjjunker/pen/yLrmRGv">Lesson 3: Hamburger Menu</a></li>
-                <li><a href="lesson03/chamber-site-plan.html">Lesson 3: Chamber Site Plan</a></li>
-                <li><a href="https://codepen.io/sjjunker/pen/PovwgyE">Lesson 4: Pseudo Class CodePen</a></li>
-                <li><a href="lesson05/bom.html">Lesson 5: Book of Mormon - Top 10</a></li>
-                <li><a href="lesson06/images/pexels-pixabay-158316-2.webp">Lesson 6: WebP</a></li>
-                <li><a href="lesson06/responsive-images.html">Lesson 6: Responsive Images</a></li>
-            </ul>
+        <section class="card">
+            <div id="LA">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li><a href="lesson01/holygrail.html">Lesson 1</a></li>
+                    <li><a href="lesson02/design.html">Lesson 2: Design</a></li>
+                    <li><a href="lesson02/media-query.html">Lesson 2: Media Query</a></li>
+                    <li><a href="lesson02/design-principles.html">Lesson 2: Design Principles</a></li>
+                    <li><a href="lesson03/images/combinators-exercises.webp">Lesson 3: Combinators Screenshot</a></li>
+                    <li><a href="https://codepen.io/sjjunker/pen/oNOKMQY">Lesson 3: Psuedo-elements CodePen</a></li>
+                    <li><a href="https://codepen.io/sjjunker/pen/yLrmRGv">Lesson 3: Hamburger Menu</a></li>
+                    <li><a href="lesson03/chamber-site-plan.html">Lesson 3: Chamber Site Plan</a></li>
+                    <li><a href="https://codepen.io/sjjunker/pen/PovwgyE">Lesson 4: Pseudo Class CodePen</a></li>
+                    <li><a href="lesson05/bom.html">Lesson 5: Book of Mormon - Top 10</a></li>
+                    <li><a href="lesson06/images/pexels-pixabay-158316-2.webp">Lesson 6: WebP</a></li>
+                    <li><a href="lesson06/responsive-images.html">Lesson 6: Responsive Images</a></li>
+                </ul>
+            </div>
+
+            <div id="Info">
+                <h3>Information</h3>
+                <ul>
+                    <li>Alabama</li>
+                    <li>Weather</li>
+                    <li>Page Visits: 0</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="card" id="Info">
-            <h3>Information</h3>
-            <p>Alabama</p>
-            <p>Weather</p>
-            <p>Page Visits: 0</p>
-        </section>
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54516.17945218807!2d-85.72487978413088!3d31.351770174181233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715194253771!5m2!1sen!2sus"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="hometown"></iframe>
+        <section>
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d54516.17945218807!2d-85.72487978413088!3d31.351770174181233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715194253771!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="hometown">
+            </iframe>
+        </section>
     </main>
 
     <footer>
