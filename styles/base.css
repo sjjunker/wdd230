@@ -87,11 +87,16 @@ main {
     position: relative;
 }
 
-.hero h2 {
+.hero div {
     position: absolute;
     text-wrap: nowrap;
     color: white;
     border: none;
+    background-color: rgba(54, 44, 93, 0.385);
+    padding: 1rem;
+    border-radius: .5rem;
+    left: 1rem;
+    top: 1rem;
 }
 
 h2 {
