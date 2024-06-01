@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.webp" type="image/x-icon">
 
     <meta property="og:title" content="Sandi Junker - WDD 230 - Chamber of Commerce Site">
     <meta property="og:type" content="website">
@@ -36,11 +36,20 @@
     </header>
 
     <main>
-        <section id="hero">
+        <!--<section id="hero">
             <h1>Lexington, Michigan Chamber of Commerce</h1>
             <img src="images/michigan-beach.jpg"
                 alt="Michigan beach at sunset with drift wood and footsteps in the sand.">
-        </section>
+        </section>-->
+        <div class="hero">
+            <div class="overlay">Large</div>
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 750px)" srcset="images/hero-medium.webp">
+
+                <img src="images/hero-large.webp" alt="People sitting around a table" style="width:auto;">
+            </picture>
+        </div>
 
         <section id="spotlights">
             <h2>Business Spotlights</h2>
@@ -94,10 +103,11 @@
         <section id="weather">
             <h2>Weather</h2>
             <img src="#" alt="Picture of the current weather">
-            <p>Temperature</p>
-            <p>Skies</p>
-            <p>Humidity: <span id="humidity"></span></p>
-            <p>Wind Chill: <span id="wind-chill"></span></p>
+            <p>Temperature: <span id=temperature>35</span>°F</p>
+            <p>Skies: Partially Cloudy</p>
+            <p>Humidity: <span id="humidity">50</span>%</p>
+            <p>Windspeed: <span id="wind-speed">10</span>mph</p>
+            <p>Wind Chill: <span id="wind-chill">0</span></p>
         </section>
 
         <section id="contact">
@@ -122,6 +132,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/nightmode.js"></script>
+    <script src="scripts/overlay.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
