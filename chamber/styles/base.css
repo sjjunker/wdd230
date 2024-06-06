@@ -2,6 +2,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    margin: 0 auto;
 }
 
 header {
@@ -23,7 +24,7 @@ h6 {
 /*Hamburger menu*/
 #menu {
     position: absolute;
-    top: .25rem;
+    top: .75rem;
     left: 1rem;
 }
 
@@ -47,7 +48,7 @@ h6 {
     position: absolute;
     width: 60px;
     height: 34px;
-    top: .25rem;
+    top: .5rem;
     right: 1rem;
 }
 
@@ -97,6 +98,7 @@ input:checked+.slider:before {
 
 .slider.round {
     border-radius: 34px;
+    color: rgba(255, 255, 255, 0);
 }
 
 .slider.round:before {
