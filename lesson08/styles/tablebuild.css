@@ -1,0 +1,44 @@
+body {
+    font-family: "Courier", Arial, serif;
+}
+
+table {
+    margin: 1rem auto;
+    border: thin solid black;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 1rem;
+    caption-side: bottom;
+    color: black;
+    font-size: .85rem;
+}
+
+thead th {
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+
+thead th:first-child {
+    background-color: black;
+    color: white;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid black;
+}
+
+th {
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightgray;
+}
