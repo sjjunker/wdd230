@@ -4,6 +4,9 @@
     --button-hover-color: lightyellow;
 }
 
+h2 {
+    text-align: left;
+}
 
 .ratePage legend {
     padding: .5rem;
