@@ -33,6 +33,11 @@
     background-color: var(--label-color);
 }
 
+#rangeValue,
+#rating {
+    margin-left: .5rem;
+}
+
 .ratePage input[type="submit"] {
     padding: .8rem;
     box-shadow: 1px 1px 4px (#999);

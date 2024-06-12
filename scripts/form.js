@@ -19,3 +19,14 @@ function checkSame() {
         p2.style.color = "#000";
     }
 }
+
+//Display the range value
+const rangeValue = document.getElementById("rangeValue");
+const range = document.getElementById("rating");
+
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
+function displayRatingValue() {
+    rangeValue.innerHTML = range.value;
+}
