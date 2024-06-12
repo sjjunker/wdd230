@@ -1,0 +1,47 @@
+:root {
+    --button-color: lightblue;
+    --label-color: rgb(233, 231, 231);
+    --button-hover-color: lightyellow;
+}
+
+
+.ratePage legend {
+    padding: .5rem;
+    text-align: left;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.ratePage label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+    margin-left: .5rem;
+}
+
+#uName,
+#password1,
+#password2,
+#email,
+#rating,
+.ratePage input[type="submit"] {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 44px;
+    padding: .75rem;
+    background-color: var(--label-color);
+}
+
+.ratePage input[type="submit"] {
+    padding: .8rem;
+    box-shadow: 1px 1px 4px (#999);
+    margin-top: 1rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+    background-color: var(--button-color);
+}
+
+.ratePage input[type="submit"]:hover {
+    background-color: var(--button-hover-color);
+}
