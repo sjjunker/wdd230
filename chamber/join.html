@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandi Junker - WDD 230 - Chamber of Commerce Site</title>
+    <meta name="description" content="WDD230 Chamber of commerce site. Contains business and events for Lexington, MI">
+    <meta name="author" content="Sandi Junker">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.webp" type="image/x-icon">
+
+    <meta property="og:title" content="Sandi Junker - WDD 230 - Chamber of Commerce Site">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sjjunker.github.io/wdd230/chamber/images/michigan-beach.jpg">
+    <meta property="og:url" content="https://sjjunker.github.io/wdd230/chamber/">
+</head>
+
+<body>
+    <header>
+        <button id="menu" title="menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+        <label class="switch">
+            <input type="checkbox" id="mode" name="mode">
+            <span class="slider round">""</span>
+        </label>
+    </header>
+
+    <main class="join">
+        <h2>Join the Chamber</h2>
+
+        <form method="get" action="thankyou.html">
+            <label>First Name* <input type="text" name="fname" id="fname" required></label>
+            <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+            <label>Title or Position* <input type="text" name="title" id="title" pattern="[A-Za\ \-]{7,}"
+                    required></label>
+            <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+            </label>
+            <label>Telephone* <input type="tel" name="telephone" id="telephone" required></label>
+            <label>Business/Organization Name* <input type="text" name="business" id="business" required></label>
+            <label>Memebership Level
+                <select name="membership-level" id="membership-level">
+                    <option value="">Please Select</option>
+                    <option value="non-profit">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>Business/Oragnization Description <input type="textarea" name="description" id="description"></label>
+            <input type="hidden" name="dateTime" id="dateTime">
+            <input type="submit" value="Start My Membership">
+        </form>
+
+        <aside id="membership-benefits">
+            <div>
+                <h3>NP and Bronze Membership</h3>
+                <ul>
+                    <li>$3.99 /month (NP free)</li>
+                    <li>Access to essential feautures and content</li>
+                    <li>Regular updates and newsletters</li>
+                    <li>Community forum participation</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>$7.99 / month</li>
+                    <li>Exclusive content such as webinars, tutorials, and eBooks</li>
+                    <li>Priority Customer Support</li>
+                    <li>Discounts on products or services</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>$14.99 /month</li>
+                    <li>Personalized consulting sessions</li>
+                    <li>Early access to new products and feautures</li>
+                    <li>Invitations to VIP events and workshops</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>©<span></span></p>
+        <p id="lastModified"></p>
+        <p>Sandi Junker</p>
+        <p>WDD 230</p>
+        <p>Contact: sandi.junker@outlook.com</p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/nightmode.js"></script>
+    <script src="scripts/overlay.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
