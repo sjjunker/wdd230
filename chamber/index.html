@@ -54,19 +54,22 @@
         <section id="spotlights">
             <h2>Business Spotlights</h2>
             <div class="business-card">
-                <img src="#" alt="#">
-                <h3>Business Name</h3>
-                <p>Business Description</p>
+                <img src="images/marias-cafe.webp" alt="A store front with coffe cups in the window">
+                <h3>Maria's Cafe</h3>
+                <p>A sweet little cafe tucked in a nook near Lexington Harbor. With floral china, creative recipes, and
+                    a friendly staff, this cafe is sure to please on an early morning.</p>
             </div>
             <div class="business-card">
-                <img src="#" alt="#">
-                <h3>Business Name</h3>
-                <p>Business Description</p>
+                <img src="images/joes-dairy.webp" alt="Upside down icream cones served in cups.">
+                <h3>Joe's Dairy</h3>
+                <p>At Joe's dairy all dairy products are locally sourced. Freshly churned ice cream, homemade cheeses,
+                    and secret recipe creamers are among the many items sold here. </p>
             </div>
             <div class="business-card">
-                <img src="#" alt="#">
-                <h3>Business Name</h3>
-                <p>Business Description</p>
+                <img src="images/jessicas-stitches.webp" alt="Two women shopping amid various clothes">
+                <h3>Jessica's Stitches</h3>
+                <p>Looking for a new wardrobe or a fantastic dress for prom? Jessica's stitches feautures homemade
+                    clothes designs and made to order dresses.</p>
             </div>
         </section>
 
@@ -113,10 +116,12 @@
         <section id="contact">
             <h2>Get In Touch</h2>
             <form>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br>
-                <label for="full-name">Full Name:</label>
-                <input type="text" id="full-name" name="full-name">
+                <label>Email:*
+                    <input type="email" id="email" name="email" required></label>
+                <label>Full Name:*
+                    <input type="text" id="full-name" name="full-name" required></label>
+                <label>Message:* <textarea id="message" name="message" rows="4" cols="25" required></textarea></label>
+                <input type="submit" value="Send My Message">
             </form>
         </section>
     </main>

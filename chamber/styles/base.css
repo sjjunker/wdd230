@@ -155,6 +155,10 @@ main {
     background-color: #f5dad280;
 }
 
+#weather p {
+    text-align: center;
+}
+
 #spotlights,
 #current-events {
     background-color: #caf4ff86;
@@ -267,4 +271,16 @@ footer p {
 .thank-you {
     height: 450px;
     text-align: center;
+}
+
+/*Contact Us Styling*/
+#contact label,
+#contact input[type="email"],
+#contact input[type="text"],
+#contact textarea {
+    display: block;
+}
+
+#contact input[type="submit"] {
+    margin-top: .5rem;
 }
