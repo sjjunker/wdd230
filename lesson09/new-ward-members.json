@@ -1,0 +1,33 @@
+{
+    "family-name": "Junker",
+    "move-in-date": "2023-08-02",
+    "family-size": 5,
+    "visited-by-bishop": true,
+    "family-members": [
+        {
+            "name": "Kevin Edward Junker",
+            "gender": "M",
+            "birthdate": "1988-06-16"
+        },
+        {
+            "name": "Sandi Jo Junker",
+            "gender": "F",
+            "birthdate": "1987-07-19"
+        },
+        {
+            "name": "Laura Lynn Junker",
+            "gender": "F",
+            "birthdate": "2012-07-29"
+        },
+        {
+            "name": "Naomi Rose Junker",
+            "gender": "F",
+            "birthdate": "2015-07-14"
+        },
+        {
+            "name": "Xander Joseph Junker",
+            "gender": "M",
+            "birthdate": "2021-03-16"
+        }
+    ]
+}
