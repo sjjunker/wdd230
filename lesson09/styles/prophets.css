@@ -1,0 +1,29 @@
+header,
+main,
+footer {
+    position: relative;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: .5rem;
+    padding: .5rem;
+
+}
+
+section {
+    border: 1px solid black;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+section img {
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkred
+}
