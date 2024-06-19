@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Barney's Tractor Supply",
+            "address": "123 Haybail Ln",
+            "phoneNumber": "555-7890",
+            "url": "www.barneys.com",
+            "img": "images/barneys-tractor.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Maria's Cafe",
+            "address": "123 Hazelnut Ln",
+            "phoneNumber": "444-7890",
+            "url": "www.marias.com",
+            "img": "images/marias-cafe.webp",
+            "membership": "Silver"
+        },
+        {
+            "name": "Jessica's Stitches",
+            "address": "123 Zipper Ln",
+            "phoneNumber": "333-7890",
+            "url": "www.jessicas.com",
+            "img": "images/jessicas-stitches.webp",
+            "membership": "Silver"
+        },
+        {
+            "name": "Joe's Dairy",
+            "address": "123 Cream Ln",
+            "phoneNumber": "222-7890",
+            "url": "www.joes.com",
+            "img": "images/joes-dairy.webp",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Harley's Autoshop",
+            "address": "123 Vroom Ln",
+            "phoneNumber": "111-7890",
+            "url": "www.harleys.com",
+            "img": "images/harleys-auto.webp",
+            "membership": "Gold"
+        },
+        {
+            "name": "Layla's Surf Shop",
+            "address": "123 Horizon Ln",
+            "phoneNumber": "666-7890",
+            "url": "www.laylas.com",
+            "img": "images/laylas-surf.webp",
+            "membership": "Bronze"
+        },
+        {
+            "name": "Tracey's Burgers",
+            "address": "123 Tasty Ln",
+            "phoneNumber": "777-7890",
+            "url": "www.traceys.com",
+            "img": "images/traceys-burgers.webp",
+            "membership": "Silver"
+        }
+    ]
+}
