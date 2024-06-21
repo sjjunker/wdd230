@@ -145,7 +145,11 @@ main {
 #spotlights,
 #call-to-action,
 #current-events,
-.navigation {
+.navigation,
+#weather,
+#contact,
+#spotlights h2,
+#current-events h2 {
     grid-column: 1 / 2;
 }
 
@@ -162,14 +166,6 @@ main {
 #spotlights,
 #current-events {
     background-color: #caf4ff86;
-}
-
-#weather {
-    grid-column: 1 / 2;
-}
-
-#contact {
-    grid-column: 1 / 2;
 }
 
 #hero {
@@ -198,11 +194,6 @@ section {
 #current-events {
     display: grid;
     grid-template-columns: 1fr;
-}
-
-#spotlights h2,
-#current-events h2 {
-    grid-column: 1 / 2;
 }
 
 input {
@@ -283,4 +274,50 @@ footer p {
 
 #contact input[type="submit"] {
     margin-top: .5rem;
+}
+
+/*Directory styling*/
+.members-main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.members section {
+    text-align: center;
+    border: 1px solid black;
+    margin: 1rem;
+    box-shadow: 0 2px 5px .5px;
+}
+
+.menu {
+    justify-self: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    box-shadow: none;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section:nth-child(even) {
+    background-color: #bed;
+}
+
+.list h2 {
+    font-size: small;
 }

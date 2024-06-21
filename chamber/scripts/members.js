@@ -4,7 +4,7 @@ const memberDiv = document.querySelector(".members");
 async function getMembers(url) {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.companies);
+    //console.table(data.companies);
     displayMembers(data.companies);
 }
 
@@ -49,3 +49,23 @@ function displayMembers(members) {
 }
 
 getMembers(url);
+
+
+
+//Change from grid view to list view
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".members");
+
+//The grid
+gridbutton.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+
+//The list
+listbutton.addEventListener("click", () => {
+    display.classList.add("list");
+    display.classList.remove("grid");
+});
