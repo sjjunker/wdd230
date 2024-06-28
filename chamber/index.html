@@ -38,6 +38,11 @@
     <main>
         <section id="hero">
             <h1>Lexington, Michigan Chamber of Commerce</h1>
+            <div id="banner">
+                <button id="banner-exit">🅇</button>
+                <h2>Meet and Greet</h2>
+                <p>Wednesday @ 7pm</p>
+            </div>
             <img src="images/michigan-beach.jpg"
                 alt="Michigan beach at sunset with drift wood and footsteps in the sand.">
         </section>
@@ -96,21 +101,34 @@
                 <h3>Event Title</h3>
                 <p>Event Description</p>
             </div>
-            <div class="event-card">
-                <img src="#" alt="#">
-                <h3>Event Title</h3>
-                <p>Event Description</p>
-            </div>
         </section>
 
         <section id="weather">
             <h2>Weather</h2>
-            <img src="#" alt="Picture of the current weather">
-            <p>Temperature: <span id=temperature>35</span>°F</p>
-            <p>Skies: Partially Cloudy</p>
-            <p>Humidity: <span id="humidity">50</span>%</p>
-            <p>Windspeed: <span id="wind-speed">10</span>mph</p>
-            <p>Wind Chill: <span id="wind-chill">0</span></p>
+            <p>Temperature: <span id=current-temp></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Windspeed: <span id="wind-speed"></span></p>
+            <div id="threeDayForc">
+                <div>
+                    <p>Tommorow</p>
+                    <p id="day-one-low"></p>
+                    <p id="dayOneHigh"></p>
+                </div>
+                <div>
+                    <p>Day 2</p>
+                    <p id="dayTwoLow"></p>
+                    <p id="dayTwoHigh"></p>
+                </div>
+                <div>
+                    <p>Day 3</p>
+                    <p id="dayThreeLow"></p>
+                    <p id="dayThreeHigh"></p>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
@@ -127,7 +145,7 @@
     </main>
 
     <footer>
-        <p>©<span></span></p>
+        <p>©<span id="copyright">2024</span></p>
         <p id="lastModified"></p>
         <p>Sandi Junker</p>
         <p>WDD 230</p>
@@ -137,8 +155,8 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/nightmode.js"></script>
-    <script src="scripts/overlay.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>

@@ -21,6 +21,23 @@ h6 {
     font-family: "Sedan SC", serif;
 }
 
+main {
+    display: grid;
+    width: 100%;
+    position: relative;
+    grid-template-columns: 1fr;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: none;
+    color: black;
+}
+
+.open a {
+    display: block;
+}
+
 /*Hamburger menu*/
 #menu {
     position: absolute;
@@ -41,7 +58,6 @@ h6 {
     flex-direction: column;
     text-align: center;
 }
-
 
 /*Dark Mode Slider*/
 .switch {
@@ -105,23 +121,6 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-main {
-    display: grid;
-    width: 100%;
-    position: relative;
-    grid-template-columns: 1fr;
-}
-
-.navigation a {
-    text-decoration: none;
-    display: none;
-    color: black;
-}
-
-.open a {
-    display: block;
-}
-
 /*Hero overlay*/
 .hero {
     width: 100%;
@@ -159,8 +158,17 @@ main {
     background-color: #f5dad280;
 }
 
-#weather p {
+#weather p,
+#weather figure {
     text-align: center;
+}
+
+#threeDayForc {
+    display: flex;
+}
+
+#threeDayForc div {
+    margin: 1rem;
 }
 
 #spotlights,
@@ -276,6 +284,14 @@ footer p {
     margin-top: .5rem;
 }
 
+.business-card {
+    margin: 1rem;
+}
+
+form {
+    margin: 1rem;
+}
+
 /*Directory styling*/
 .members-main {
     display: grid;
@@ -320,4 +336,16 @@ footer p {
 
 .list h2 {
     font-size: small;
+}
+
+/*Banner syling*/
+#banner {
+    background-color: #2195f37e;
+    position: absolute;
+    top: 8rem;
+    width: 100%;
+}
+
+#banner p {
+    text-align: center;
 }

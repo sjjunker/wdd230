@@ -30,8 +30,16 @@
         display: block;
     }
 
+    #contact form {
+        align-self: center;
+    }
+
     /*Join page styling*/
     .join div {
         margin-left: 3rem;
+    }
+
+    #banner {
+        top: 100px;
     }
 }
