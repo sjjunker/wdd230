@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 685px) {
     main {
         display: grid;
         width: 100%;
@@ -76,5 +76,9 @@
 
     #menu {
         display: none;
+    }
+
+    #contact form {
+        margin: 3rem;
     }
 }

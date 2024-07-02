@@ -165,6 +165,7 @@ input:checked+.slider:before {
 
 #threeDayForc {
     display: flex;
+    justify-content: center;
 }
 
 #threeDayForc div {
@@ -192,16 +193,49 @@ h2 {
 #hero img {
     width: 100%;
     height: auto;
+    border-radius: 0;
 }
 
 section {
     justify-items: center;
 }
 
+#action-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+#action-div h4 {
+    position: absolute;
+    right: 290px;
+    color: black;
+}
+
+ul li {
+    padding: 1rem;
+}
+
+#action-div img {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+}
+
 #spotlights,
 #current-events {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+#current-events {
+    align-items: center;
+}
+
+.event-card {
+    margin: 1rem;
+    text-align: center;
 }
 
 input {
@@ -348,4 +382,21 @@ form {
 
 #banner p {
     text-align: center;
+}
+
+img {
+    border-radius: .5rem;
+}
+
+#overlay {
+    position: relative;
+}
+
+#call-to-action h3 {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: .5rem;
+    padding: 1rem;
+    position: absolute;
+    left: 9.5rem;
+    top: 7rem;
 }
