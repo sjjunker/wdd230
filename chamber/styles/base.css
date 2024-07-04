@@ -177,13 +177,18 @@ input:checked+.slider:before {
     background-color: #caf4ff86;
 }
 
+#main-main section {
+    border: 1px solid white;
+}
+
 #hero {
     position: relative;
 }
 
 h1 {
     position: absolute;
-    text-align: center;
+    margin: 1rem;
+    top: -1rem;
 }
 
 h2 {
@@ -242,6 +247,10 @@ input {
     margin-bottom: .5rem;
 }
 
+form {
+    justify-self: center;
+}
+
 footer {
     display: flex;
     padding: 1rem;
@@ -253,7 +262,7 @@ footer {
 }
 
 footer p {
-    margin-right: 3rem;
+    margin: .5rem;
 }
 
 /*Join Form Styling*/
@@ -298,6 +307,14 @@ footer p {
 .join input[type="submit"]:hover {
     background-color: darkblue;
     color: white;
+}
+
+#membership-benefits {
+    margin: 1rem;
+}
+
+.discover aside {
+    margin: 1rem;
 }
 
 /*Thankyou styling*/
@@ -374,7 +391,7 @@ form {
 
 /*Banner syling*/
 #banner {
-    background-color: #2195f37e;
+    background-color: #a6cdec7e;
     position: absolute;
     top: 8rem;
     width: 100%;
@@ -399,4 +416,8 @@ img {
     position: absolute;
     left: 9.5rem;
     top: 7rem;
+}
+
+.active-page {
+    font-size: larger;
 }

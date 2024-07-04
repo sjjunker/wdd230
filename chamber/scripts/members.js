@@ -4,7 +4,6 @@ const memberDiv = document.querySelector(".members");
 async function getMembers(url) {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data.companies);
     displayMembers(data.companies);
 }
 

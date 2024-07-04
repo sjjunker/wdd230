@@ -5,7 +5,6 @@ const spotlights = document.querySelector("#spotlights");
 async function getMembers(url) {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.companies);
     displayMembers(data.companies);
 }
 
@@ -58,8 +57,6 @@ function displayMembers(members) {
         address.innerHTML = member.address;
         phoneNumber.innerHTML = member.phoneNumber;
         url.innerHTML = member.url;
-
-        //console.log(name);
 
         //Set child elements to the card
         card.appendChild(name);

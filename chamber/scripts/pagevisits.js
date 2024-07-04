@@ -20,5 +20,3 @@ if (lastDate == todaysDate) {
 
 //Set new last date
 window.localStorage.setItem("last-date", todaysDate);
-
-console.log("Hello");
