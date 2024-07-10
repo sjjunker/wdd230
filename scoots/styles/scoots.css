@@ -1,0 +1,51 @@
+body {
+    margin: 0 auto;
+    width: 1060px;
+}
+
+/*Header styling*/
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    background-color: rgba(254, 141, 84, 0.709);
+    width: 94%;
+    color: rgb(7, 37, 113);
+    top: 0px;
+    padding: 2rem;
+    text-align: center;
+    font-size: 45px;
+    font-family: cursive;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(254, 141, 84);
+    margin-top: -10px;
+}
+
+nav a {
+    color: rgb(7, 37, 113);
+    text-decoration: none;
+    padding: 2rem;
+}
+
+/*Footer styling*/
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(254, 141, 84);
+}
+
+#social-media a img {
+    height: 25px;
+    width: auto;
+}

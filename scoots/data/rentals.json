@@ -1,0 +1,58 @@
+{
+    "rentals": [
+        {
+            "name": "Honda Metro Scooter",
+            "max-people": "1",
+            "half-day-resevation": "$20",
+            "full-day-reservation": "$30",
+            "half-day-walk-in": "$25",
+            "full-day-walk-in": "$35",
+            "image": "https://sjjunker.github.io/wdd230/scoots/images/metro.webp"
+        },
+        {
+            "name": "Honda Dio Scooter",
+            "max-people": "2",
+            "half-day-resevation": "$30",
+            "full-day-reservation": "$40",
+            "half-day-walk-in": "$35",
+            "full-day-walk-in": "$45",
+            "image": "https://sjjunker.github.io/wdd230/scoots/images/dio.webp"
+        },
+        {
+            "name": "Honda PCX150 Scooter",
+            "max-people": "2",
+            "half-day-resevation": "$40",
+            "full-day-reservation": "$50",
+            "half-day-walk-in": "$45",
+            "full-day-walk-in": "$55",
+            "image": "https://sjjunker.github.io/wdd230/scoots/images/pcx.webp"
+        },
+        {
+            "name": "Honda Pioneer ATV",
+            "max-people": "4",
+            "half-day-resevation": "$50",
+            "full-day-reservation": "$70",
+            "half-day-walk-in": "$60",
+            "full-day-walk-in": "$80",
+            "image": "https://sjjunker.github.io/wdd230/scoots/images/atv.webp"
+        },
+        {
+            "name": "Jeep Wrangler - 4 door with a/c",
+            "max-people": "5",
+            "half-day-resevation": "$70",
+            "full-day-reservation": "$100",
+            "half-day-walk-in": "$85",
+            "full-day-walk-in": "$125",
+            "image": "https://sjjunker.github.io/wdd230/scoots/images/wrangler-four.webp"
+        },
+        {
+            "name": "Jeep Wrangler - 2 door",
+            "max-people": "4",
+            "half-day-resevation": "$60",
+            "full-day-reservation": "$85",
+            "half-day-walk-in": "$70",
+            "full-day-walk-in": "$90",
+            "image": "https://sjjunker.github.io/wdd230/scoots/images/wrangler-two.webp"
+        }
+    ]
+}
