@@ -1,6 +1,5 @@
 body {
     margin: 0 auto;
-    width: 1060px;
 }
 
 /*Header styling*/
@@ -9,14 +8,14 @@ body {
 }
 
 #hero img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
 h1 {
     position: absolute;
     background-color: rgba(254, 141, 84, 0.709);
-    width: 94%;
+    width: 91%;
     color: rgb(7, 37, 113);
     top: 0px;
     padding: 2rem;
@@ -36,6 +35,37 @@ nav a {
     color: rgb(7, 37, 113);
     text-decoration: none;
     padding: 2rem;
+}
+
+/*Main styling*/
+#home-main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Home - Weather*/
+
+
+/*Home - Rentals*/
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cards article {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/*Home - Call to action*/
+#call-to-action-section {
+    position: relative;
+}
+
+#call-to-action-section h2 {
+    position: absolute;
+    background-color: rgb(254, 141, 84);
+    color: rgb(7, 37, 113);
 }
 
 /*Footer styling*/

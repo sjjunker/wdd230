@@ -1,4 +1,4 @@
-const rentalsSect = document.getElementById("rentals-section");
+const rentalsSect = document.getElementById("cards");
 const url = "https://sjjunker.github.io/wdd230/scoots/data/rentals.json";
 
 

@@ -26,25 +26,38 @@
         <nav>
             <a href="#">Home</a>
             <a href="#">Rentals</a>
-            <a href="#">Reservations</a>
+            <a href="reservations.html">Reservations</a>
             <a href="#">Contact</a>
         </nav>
         <div id="banner"><!--TODO: closeable banner with high temp--></div>
     </header>
-    <main>
+    <main id="home-main">
         <aside id="weather-aside">
             <h2>Weather</h2>
-            <!--TODO Javascript loaded weather data, current temperature, current humidity
-            next day's temperature at 3pm-->
+
+            <div id="current-weather">
+                <h3>Current Weather</h3>
+                <img id="weather-icon" src="#" alt="#">
+                <p id="weather-description"></p>
+                <p id="current-temp"></p>
+                <p id="humidity"></p>
+            </div>
+
+            <div id="tomorrows-weather">
+                <h3>Tomorrow</h3>
+                <p id="tomorrows-high"></p>
+            </div>
+
         </aside>
         <section id="rentals-section">
             <h2>Rentals</h2>
-            <!--TODO: use javascript to load in rentals-->
+            <div id="cards"></div>
         </section>
         <section id="call-to-action-section">
-            <h2>Reserve Now!</h2>
-            <img src="#" alt="#">
-            <!--TODO: a link both h2 and img-->
+            <a href="reservations.html">
+                <h2>Reserve Now!</h2>
+                <img src="images/call-to-action.webp" alt="A dirt road going through a tropical forest.">
+            </a>
         </section>
 
     </main>
@@ -56,9 +69,16 @@
             <a href="https://www.instagram.com"><img src="images/instagram.webp"></a>
         </section>
         <section id="contact">
-            <p>Contact: scoots.at.cozumel@gmail.com</p>
+            <p>Email: scoots.at.cozumel@gmail.com</p>
+            <p>Phone: +52 11 2222-3333</p>
+        </section>
+        <section id="attributions">
+            <a href="attributions.html">Attributions</a>
         </section>
     </footer>
+
+    <script src="scripts/rentals.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
