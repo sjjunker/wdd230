@@ -3,8 +3,14 @@ body {
 }
 
 /*Header styling*/
+header {
+    background-color: rgb(254, 141, 84);
+    padding-bottom: .25rem;
+}
+
 #hero {
     position: relative;
+    width: 100%;
 }
 
 #hero img {
@@ -15,26 +21,63 @@ body {
 h1 {
     position: absolute;
     background-color: rgba(254, 141, 84, 0.709);
-    width: 91%;
+    width: 100%;
     color: rgb(7, 37, 113);
-    top: 0px;
-    padding: 2rem;
+    top: 10px;
+    right: 0;
+    padding: 1rem;
     text-align: center;
     font-size: 45px;
     font-family: cursive;
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgb(254, 141, 84);
-    margin-top: -10px;
+#banner {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    width: 150px;
+    padding: .25rem;
+    background-color: rgb(7, 37, 113);
+    color: white;
+    border-radius: 1rem;
+    border: none;
 }
 
-nav a {
+#banner:hover {
+    background-color: rgb(254, 141, 84);
+    color: rgb(7, 37, 113);
+}
+
+.navigation a {
     color: rgb(7, 37, 113);
     text-decoration: none;
     padding: 2rem;
+    display: none;
+}
+
+/*Hamburger menu*/
+#menu {
+    display: block;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "🅇";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgb(254, 141, 84);
+}
+
+.open a {
+    display: block;
 }
 
 /*Main styling*/
@@ -44,28 +87,52 @@ nav a {
 }
 
 /*Home - Weather*/
+#weather-aside {
+    width: 100%;
+}
 
+#current-weather,
+#tomorrows-weather {
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+    box-shadow: 1px 1px 10px 1px rgba(7, 37, 113, 0.482);
+}
 
 /*Home - Rentals*/
 #cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
 }
 
 #cards article {
     margin: 1rem;
     padding: 1rem;
+    box-shadow: 1px 1px 10px 1px rgba(7, 37, 113, 0.482);
 }
 
 /*Home - Call to action*/
 #call-to-action-section {
     position: relative;
+    width: 100%;
+    justify-self: center;
+}
+
+#call-to-action-section img {
+    border-radius: 1rem;
+    width: fit-content;
+    margin: 1rem;
 }
 
 #call-to-action-section h2 {
     position: absolute;
     background-color: rgb(254, 141, 84);
     color: rgb(7, 37, 113);
+    margin: 1rem;
+    top: 5rem;
 }
 
 /*Footer styling*/

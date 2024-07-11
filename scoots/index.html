@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/scoots.css">
+    <link rel="stylesheet" href="styles/larger.css">
 </head>
 
 <body>
@@ -22,14 +23,16 @@
         <div id="hero">
             <img src="images/hero.webp" alt="Man on a red motorized scooter.">
             <h1>Scoots</h1>
+            <button id="banner"></button>
         </div>
-        <nav>
+
+        <button id="menu" title="menu"></button>
+        <nav class="navigation">
             <a href="#">Home</a>
             <a href="#">Rentals</a>
             <a href="reservations.html">Reservations</a>
             <a href="#">Contact</a>
         </nav>
-        <div id="banner"><!--TODO: closeable banner with high temp--></div>
     </header>
     <main id="home-main">
         <aside id="weather-aside">
@@ -37,6 +40,7 @@
 
             <div id="current-weather">
                 <h3>Current Weather</h3>
+                <p id="weather-title"></p>
                 <img id="weather-icon" src="#" alt="#">
                 <p id="weather-description"></p>
                 <p id="current-temp"></p>
@@ -79,6 +83,8 @@
 
     <script src="scripts/rentals.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>
