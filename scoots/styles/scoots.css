@@ -168,7 +168,10 @@ form label {
 #period,
 #rentalNumber,
 #cruiseline,
-#comments {
+#comments,
+#name,
+#contact-email,
+#contact-comments {
     display: block;
 }
 
@@ -195,6 +198,30 @@ th {
 td,
 th {
     padding: 1rem;
+}
+
+/*Contact page Styling*/
+
+#contact-section,
+#contact-form,
+#location {
+    margin: 1rem;
+}
+
+#contact-form form {
+    padding-top: 0;
+}
+
+#location iframe {
+    width: 100%;
+}
+
+#contact-section p {
+    padding-left: 1rem;
+}
+
+#contact-form input[type="submit"] {
+    margin-left: 0;
 }
 
 /*Footer styling*/

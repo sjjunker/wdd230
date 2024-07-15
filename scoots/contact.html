@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots Homepage</title>
-    <meta name="description" content="The homepage for Scoots rental services in Cozumel, Mexico.">
+    <title>Scoots Contact</title>
+    <meta name="description" content="The contact page for Scoots rental services in Cozumel, Mexico.">
     <meta name="author" content="Sandi Junker">
 
-    <meta property="og:title" content="Scoots Homepage">
+    <meta property="og:title" content="Scoots Contact">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/scooter.webp">
-    <meta property="og:url" content="https://sjjunker.github.io/wdd230/scoots">
+    <meta property="og:url" content="https://sjjunker.github.io/wdd230/scoots/contact.html">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/scoots.css">
@@ -20,12 +20,6 @@
 
 <body>
     <header>
-        <div id="hero">
-            <img src="images/hero.webp" alt="Man on a red motorized scooter.">
-            <h1 id="scoots">Scoots</h1>
-            <button id="banner"></button>
-        </div>
-
         <button id="menu" title="menu"></button>
         <nav class="navigation">
             <a href="index.html">Home</a>
@@ -33,37 +27,29 @@
             <a href="reservations.html">Reservations</a>
             <a href="contact.html">Contact</a>
         </nav>
+        <h1>Contact Us</h1>
     </header>
-    <main id="home-main">
-        <aside id="weather-aside">
-            <h2>Weather</h2>
-
-            <div id="current-weather">
-                <h3>Current Weather</h3>
-                <p id="weather-title"></p>
-                <img id="weather-icon" src="#" alt="#">
-                <p id="weather-description"></p>
-                <p id="current-temp"></p>
-                <p id="humidity"></p>
-            </div>
-
-            <div id="tomorrows-weather">
-                <h3>Tomorrow</h3>
-                <p id="tomorrows-high"></p>
-            </div>
-
-        </aside>
-        <section id="rentals-section">
-            <h2>Rentals</h2>
-            <div id="cards"></div>
+    <main>
+        <section id="contact-section">
+            <h2>Contact Information</h2>
+            <p>Email: scoots.at.cozumel@gmail.com</p>
+            <p>Phone: +52 11 2222-3333</p>
         </section>
-        <section id="call-to-action-section">
-            <a href="reservations.html">
-                <h2>Reserve Now!</h2>
-                <img src="images/call-to-action.webp" alt="A dirt road going through a tropical forest.">
-            </a>
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <label>Name* <input type="text" name="name" id="name" required></label>
+                <label>Email* <input type="email" name="email" id="contact-email"></label>
+                <label>Comment <textarea name="comments" id="contact-comments" rows="6" cols="40"></textarea></label>
+                <input type="submit" value="Send My Message">
+            </form>
         </section>
-
+        <section id="location">
+            <h2>Our Locations</h2>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1c9D7jJuT1wFH6k5qm8QwZzqKkwJI80Y&ehbc=2E312F&noprof=1"
+                width="640" height="480">
+            </iframe>
+        </section>
     </main>
     <footer>
         <section id="copyright">©2024 | Sandi Junker | Scoots</section>
@@ -81,9 +67,6 @@
         </section>
     </footer>
 
-    <script src="scripts/rentals.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/banner.js"></script>
     <script src="scripts/hamburger.js"></script>
 </body>
 
