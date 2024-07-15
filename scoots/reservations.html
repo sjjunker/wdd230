@@ -27,9 +27,66 @@
             <a href="reservations.html">Reservations</a>
             <a href="#">Contact</a>
         </nav>
+        <h1>Reservations</h1>
     </header>
     <main id="reservations-main">
-
+        <h2>Book Your Reservation</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+                <label>First Name* <input type="text" id="fName" name="fName" required></label>
+                <label>Last Name* <input type="text" id="lName" name="lName" required></label>
+                <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label>Telephone* <input type="tel" name="telephone" id="telephone" required></label>
+                <label>Home State/Country <input type="text" name="home" id="home"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Rental Info</legend>
+                <label>Date* <input type="date" name="date" id="form-date" required></label>
+                <label>Period*
+                    <select name="period" id="period" required>
+                        <option value="">Please Select</option>
+                        <option value="half-day">Half Day (3hrs)</option>
+                        <option value="full-day">Full Day</option>
+                    </select>
+                </label>
+                <label>Rental Type*
+                    <ul>
+                        <li><input type="radio" name="rental-type" value="metro"> Honda Metro Scooter</li>
+                        <li><input type="radio" name="rental-type" value="dio"> Honda Dio Scooter</li>
+                        <li><input type="radio" name="rental-type" value="pcx150"> Honda PCX150 Scooter</li>
+                        <li><input type="radio" name="rental-type" value="atv"> Honda Pioneer ATV</li>
+                        <li><input type="radio" name="rental-type" value="wrangler-four"> Jeep Wrangler - 4 Door with
+                            A/C</li>
+                        <li><input type="radio" name="rental-type" value="wrangler-two"> Jeep Wrangler - 2 Door</li>
+                    </ul>
+                </label>
+                <label>Number of Rentals* <input type="number" name="rentalNumber" id="rentalNumber" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Other Info</legend>
+                <label>Cruiseline <input type="text" name="cruiseline" id="cruiseline"></label>
+                <label>Special Accomodations/Comments <textarea name="comments" id="comments" rows="6"
+                        cols="40"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Book My Reservation">
+        </form>
+        <div id="agreement">
+            <h2>Rental Services and Agreements</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </div>
     </main>
     <footer>
         <section id="copyright">©2024 | Sandi Junker | Scoots</section>
@@ -47,9 +104,6 @@
         </section>
     </footer>
 
-    <script src="scripts/rentals.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/banner.js"></script>
     <script src="scripts/hamburger.js"></script>
 </body>
 
