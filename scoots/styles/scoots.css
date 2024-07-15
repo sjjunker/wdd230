@@ -69,6 +69,15 @@ header {
     font-weight: bold;
 }
 
+.navigation a:hover {
+    font-size: larger;
+}
+
+.current-page {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
 /*Hamburger menu*/
 #menu {
     display: block;
@@ -230,10 +239,11 @@ th {
 /*Footer styling*/
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(254, 141, 84);
     color: rgb(7, 37, 113);
     align-content: center;
+    padding: 1rem;
 }
 
 #social-media a img {
@@ -244,5 +254,8 @@ footer {
 #attributions a {
     text-decoration: none;
     color: rgb(7, 37, 113);
+}
 
+#contact p {
+    margin: .5rem;
 }
