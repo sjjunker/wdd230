@@ -10,6 +10,7 @@ h4,
 h5,
 h6 {
     margin: 1rem;
+    font-family: cursive;
 }
 
 /*Header styling*/
@@ -64,6 +65,8 @@ header {
     text-decoration: none;
     padding: 2rem;
     display: none;
+    font-family: cursive;
+    font-weight: bold;
 }
 
 /*Hamburger menu*/
@@ -241,4 +244,5 @@ footer {
 #attributions a {
     text-decoration: none;
     color: rgb(7, 37, 113);
+
 }
