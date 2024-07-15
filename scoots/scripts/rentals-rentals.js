@@ -11,7 +11,7 @@ async function getRentals(url) {
 function displayRentals(rentals) {
 
     rentals.forEach(rental => {
-        //Create the card and its elements
+        //Create the table row and its elements
         let tableRow = document.createElement("tr");
         let name = document.createElement("th");
         let maxPeople = document.createElement("td");
@@ -28,7 +28,7 @@ function displayRentals(rentals) {
         halfWalk.innerHTML = rental.half-day-walk;
         fullWalk.innerHTML = rental.full-day-walk;
 
-        //Append the elements to the card
+        //Append the elements to the row
         tableRow.appendChild(name);
         tableRow.appendChild(maxPeople);
         tableRow.appendChild(halfReserv);
@@ -36,7 +36,7 @@ function displayRentals(rentals) {
         tableRow.appendChild(halfWalk);
         tableRow.appendChild(fullWalk);
 
-        //Add the card to the DOM
+        //Add the row to the DOM
         rentalTable.appendChild(tableRow);
     });
 }
