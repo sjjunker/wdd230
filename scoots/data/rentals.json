@@ -3,7 +3,7 @@
         {
             "name": "Honda Metro Scooter",
             "maxPeople": "1",
-            "halfDayResevation": "$20",
+            "halfDayReservation": "$20",
             "fullDayReservation": "$30",
             "halfDayWalk": "$25",
             "fullDayWalk": "$35",
@@ -12,7 +12,7 @@
         {
             "name": "Honda Dio Scooter",
             "maxPeople": "2",
-            "halfDayResevation": "$30",
+            "halfDayReservation": "$30",
             "fullDayReservation": "$40",
             "halfDayWalk": "$35",
             "fullDayWalk": "$45",
@@ -21,7 +21,7 @@
         {
             "name": "Honda PCX150 Scooter",
             "maxPeople": "2",
-            "halfDayResevation": "$40",
+            "halfDayReservation": "$40",
             "fullDayReservation": "$50",
             "halfDayWalk": "$45",
             "fullDayWalk": "$55",
@@ -30,7 +30,7 @@
         {
             "name": "Honda Pioneer ATV",
             "maxPeople": "4",
-            "halfDayResevation": "$50",
+            "halfDayReservation": "$50",
             "fullDayReservation": "$70",
             "halfDayWalk": "$60",
             "fullDayWalk": "$80",
@@ -39,7 +39,7 @@
         {
             "name": "Jeep Wrangler - 4 door with a/c",
             "maxPeople": "5",
-            "halfDayResevation": "$70",
+            "halfDayReservation": "$70",
             "fullDayReservation": "$100",
             "halfDayWalk": "$85",
             "fullDayWalk": "$125",
@@ -48,7 +48,7 @@
         {
             "name": "Jeep Wrangler - 2 door",
             "maxPeople": "4",
-            "halfDayResevation": "$60",
+            "halfDayReservation": "$60",
             "fullDayReservation": "$85",
             "halfDayWalk": "$70",
             "fullDayWalk": "$90",

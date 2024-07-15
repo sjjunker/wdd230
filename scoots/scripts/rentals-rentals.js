@@ -22,11 +22,11 @@ function displayRentals(rentals) {
 
         //Set the attributes
         name.innerHTML = rental.name;
-        maxPeople.innerHTML = rental.max-people;
-        halfReserv.innerHTML = rental.half-day-reservation;
-        fullReserv.innerHTML = rental.full-day-reservation;
-        halfWalk.innerHTML = rental.half-day-walk;
-        fullWalk.innerHTML = rental.full-day-walk;
+        maxPeople.innerHTML = rental.maxPeople;
+        halfReserv.innerHTML = rental.halfDayReservation;
+        fullReserv.innerHTML = rental.fullDayReservation;
+        halfWalk.innerHTML = rental.halfDayWalk;
+        fullWalk.innerHTML = rental.fullDayWalk;
 
         //Append the elements to the row
         tableRow.appendChild(name);

@@ -182,6 +182,21 @@ label ul {
     list-style-type: none;
 }
 
+/*Rentals Page*/
+#rental-vehicles tr:nth-child(2n + 3),
+th {
+    background-color: rgba(7, 37, 113, 0.14);
+}
+
+#rental-vehicles {
+    width: 100%;
+}
+
+td,
+th {
+    padding: 1rem;
+}
+
 /*Footer styling*/
 footer {
     display: flex;
