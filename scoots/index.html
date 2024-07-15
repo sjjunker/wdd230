@@ -21,7 +21,11 @@
 <body>
     <header>
         <div id="hero">
-            <img src="images/hero.webp" alt="Man on a red motorized scooter.">
+            <picture>
+                <source media="(max-width: 799px)" srcset="images/hero-smaller.webp">
+
+                <img src="images/hero.webp" alt="Man on a red motorized scooter." style="width:100%;">
+            </picture>
             <h1 id="scoots">Scoots</h1>
             <button id="banner"></button>
         </div>
